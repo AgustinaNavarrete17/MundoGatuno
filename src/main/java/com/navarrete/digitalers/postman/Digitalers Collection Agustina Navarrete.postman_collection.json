@@ -1,0 +1,760 @@
+{
+	"info": {
+		"_postman_id": "438ab1f2-7fec-421b-b258-e942e54c5bae",
+		"name": "Digitalers Collection Agustina Navarrete",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19772926"
+	},
+	"item": [
+		{
+			"name": "gatos",
+			"item": [
+				{
+					"name": "listarGatos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/gatos/listar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"gatos",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarGatoPorID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/gatos/listarPorId/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"gatos",
+								"listarPorId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearGato",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Felipe\",\r\n  \"edad\": \"3 años\",\r\n  \"sexo\": \"macho\",\r\n  \"peso\": \"3 kilogramos\",\r\n  \"descripcion\": \"Felipe es un gato acostumbrado a convivir con otras mascotas, tanto perros como gatos. Está castrado, tiene las vacunas completas y reciéntemente se le aplicó una pipeta desparasitaria. Sabe usar piedras sanitarias y es muy educado\",\r\n  \"color\":\"Beige\",\r\n  \"adoptado\": false,\r\n   \"adoptante\": {\r\n    \"id\": 1\r\n  }\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/gatos/crear",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"gatos",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarGato",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,  \r\n  \"nombre\": \"Felipe\",\r\n  \"edad\": \"3 años\",\r\n  \"sexo\": \"macho\",\r\n  \"peso\": \"3 kilogramos\",\r\n  \"descripcion\": \"Felipe es un gato acostumbrado a convivir con otras mascotas, tanto perros como gatos. Está castrado, tiene las vacunas completas y reciéntemente se le aplicó una pipeta desparasitaria. Sabe usar piedras sanitarias y es muy educado\",\r\n  \"color\":\"Beige\",\r\n  \"adoptado\": false,\r\n   \"adoptante\": {\r\n    \"id\": 2\r\n  }\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/gatos/actualizar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"gatos",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarGato",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/gatos/eliminar/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"gatos",
+								"eliminar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "adoptantes",
+			"item": [
+				{
+					"name": "listarAdoptantes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/adoptantes/listar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"adoptantes",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarAdoptantePorID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/adoptantes/listarPorId/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"adoptantes",
+								"listarPorId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearAdoptante",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Martin\",\r\n  \"apellido\": \"Maunás\",\r\n  \"telefono\": 261562812,\r\n  \"edad\": 30,\r\n  \"direccion\": \"Casa C, calle 2, Mendoza\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/adoptantes/crear",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"adoptantes",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarAdoptante",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,\r\n  \"nombre\": \"María Agustina\",\r\n  \"apellido\": \"Navarrete\",\r\n  \"telefono\": 261778899,\r\n  \"edad\": 25,\r\n  \"direccion\": \"Barrio A, Casa 5, Godoy Cruz, Mendoza\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/adoptantes/actualizar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"adoptantes",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarAdoptante",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/adoptantes/eliminar/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"adoptantes",
+								"eliminar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "alimentacion",
+			"item": [
+				{
+					"name": "listarAlimentacion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/alimentacion/listar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"alimentacion",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarAlimentacionPorID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/alimentacion/listarPorId/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"alimentacion",
+								"listarPorId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearAlimentacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Pro Plan urinario\",\r\n  \"descripcion\": \"Este alimento es especial para gatos adultos y castrados. Es un alimento rico en nutrientes y es óptimo para cuidar la salud de nuestras mascotas, previniendo enfermedades de riñones y vía urinaria\",\r\n  \"cantidad\": \"Se recomienda dar un puñado de alimento por vez que se le de de comer al gato\",\r\n  \"horario\": \"cada 6 horas\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/alimentacion/crear",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"alimentacion",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarAlimentacion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,\r\n  \"nombre\": \"CatChow cachorros\",\r\n  \"descripcion\": \"Este alimento es especial para gatos cachorros de 3 a 8 meses. Es un alimento rico en nutrientes, económico y fácil de conseguir en cualquier mercado\",\r\n  \"cantidad\": \"Se recomienda dar medio puñado de alimento por vez que se le de de comer al gato\",\r\n  \"horario\": \"cada 6 horas\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/alimentacion/actualizar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"alimentacion",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarAlimentacion",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/alimentacion/eliminar/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"alimentacion",
+								"eliminar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "comportamiento",
+			"item": [
+				{
+					"name": "listarComportamientos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/comportamiento/listar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"comportamiento",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarComportamientoPorID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/comportamiento/listarPorId/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"comportamiento",
+								"listarPorId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearComportamiento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"¿Por qué amasan los gatos?\",\r\n  \"descripcion\": \"Existen varias respuestas: amasar para mostrar satisfacción o aliviar el estrés, amasar para crear un lugar suave para dormir o amasar para marcar su territorio\",\r\n  \"sugerencia\": \"Se recomienda permitir a nuestra mascota amasar tranquilamente, sin interrumpirlo para no generarle estrés. Para evitar que rompa telas/sábanas, etc, acostumbrarlo a amasar sobre su propia manta\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/comportamiento/crear",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"comportamiento",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarComportamiento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n  \"id\": 2,   \r\n  \"nombre\": \"¿Por qué amasan los gatos?\",\r\n  \"descripcion\": \"Existen varias respuestas: amasar para mostrar satisfacción o aliviar el estrés, amasar para crear un lugar suave para dormir o amasar para marcar su territorio\",\r\n  \"sugerencia\": \"Se recomienda permitir a nuestra mascota amasar tranquilamente, sin interrumpirlo para no generarle estrés. Para evitar que rompa sillones o sábanas, acostumbrarlo a amasar sobre su propia manta\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/comportamiento/actualizar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"comportamiento",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarComportamiento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/comportamiento/eliminar/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"comportamiento",
+								"eliminar",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "salud",
+			"item": [
+				{
+					"name": "listarSalud",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/salud/listar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salud",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarSaludPorID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/salud/listarPorId/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salud",
+								"listarPorId",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearSalud",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n  \"nombre\": \"¿Cómo determinar el sexo de nuestro gato?\",\r\n  \"descripcion\": \"Un macho tendrá una distancia mayor entre los genitales y el ano. Pero si los dos están adyacentes en un gatito o a menos de 1/2 pulgada de distancia en un adulto, es una hembra\",\r\n  \"tratamiento\": \"En caso de no poder identificar el sexo del gato, es muy importante acudir a veterinario que pueda dejarnos tranquilos con una respuesta certera\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/salud/crear",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salud",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarSalud",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n   \"id\": 1,   \r\n  \"nombre\": \"¿Por qué debemos esterilizar a nuestros gatos?\",\r\n  \"descripcion\": \"La castración tiene muchas ventajas: evita el riesgo de embarazos no deseados y reduce la población de gatos callejeros. Además, reduce la probabilidad de que tu gato sufra determinadas enfermedades y se comporte de forma poco sociable\",\r\n  \"tratamiento\": \"Se recomienda castrar a los gatos machos a partir de los 8 meses. Mientras que a las gatas hembras se recomienda castrarlas desde los 6 meses para evitar embarazos. Antes de castrar a nuestras mascotas debemos asesorarnos con un veterinario\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/salud/actualizar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salud",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarSalud",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/v1/salud/eliminar/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salud",
+								"eliminar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
